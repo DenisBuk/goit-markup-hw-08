@@ -1,0 +1,29 @@
+/* Socials */
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+
+    color: var(--border-icon);
+    background-color: var(--white-color);
+    border-radius: 50%;
+    transition: background-color var(--transition);
+
+&:hover,
+&:focus {
+    background-color: var(--blue-color);
+     --color4: var(--white-color);
+    }
+
+}
+

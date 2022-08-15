@@ -1,0 +1,18 @@
+/** Footer-social **/
+
+.footer-come {
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.footer-social .social-link {
+    background-color: var(--footer-bg-icon);
+    --color4: var(--white-color);
+    transition: background-color var(--transition);
+}
+
+.footer-social .social-link:hover,
+.social-link:focus {
+    background-color: var(--blue-color);
+
+}

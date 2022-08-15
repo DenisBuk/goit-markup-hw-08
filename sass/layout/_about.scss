@@ -1,0 +1,22 @@
+.about {
+    padding-top: 0;
+&__list {
+     --card-item: 3;
+    }
+.card-item {
+    position: relative;
+    }
+    &__label {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 27px;
+    text-align: center;
+    color: var(--white-color);
+    background: var(--label);
+    }
+}
+
+
+

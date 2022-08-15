@@ -1,0 +1,143 @@
+.register-form {
+    text-align: center;
+}
+
+.register-form-title {
+    display: block;
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23/20);
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.register-form-group {
+    margin-bottom: 20px;
+}
+
+.register-form-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+
+    &:last-child {
+    margin-bottom: 0;
+    }
+}
+
+.register-form-label {
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.register-form-position {
+    position: relative;
+}
+
+.register-form-input,
+.register-form-message {
+    width: 100%;
+    height: 40px;
+    padding: 11px;
+    padding-left: 42px;
+    border: 1px solid var(--form-input);
+    border-radius: 4px;
+    outline: transparent;
+    cursor: pointer;
+    transition: border var(--transition);
+
+    &:hover,
+    &:focus,
+    &:hover,
+    &:focus {
+    border: 1px solid var(--blue-color);
+    }
+}
+
+.register-form-input:hover+.register-form-icon,
+.register-form-input:focus+.register-form-icon {
+    fill: var(--blue-color);
+}
+
+.register-form-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    transition: fill var(--transition);
+}
+
+.register-form-message {
+    height: 120px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    resize: none;
+
+    &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+
+
+.register-form-agreement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: fill var(--transition);
+}
+
+.register-icon-check {
+    opacity: 0;
+    transition: opacity var(--transition);
+
+    .register-checkbox:checked+.register-icon &{
+            opacity: 1;
+        }
+}
+
+.register-icon-uncheck {
+    transition: fill var(--transition);
+
+    .register-checkbox:checked+.register-icon &{
+            opacity: 0;
+            transition: opacity var(--transition);
+        }
+}
+
+.register-checkbox:hover+.register-icon .register-icon-uncheck,
+.register-checkbox:focus+.register-icon .register-icon-uncheck {
+    fill: var(--blue-color);
+}
+
+.register-form-agreement-text {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: var(--grey-color);
+    user-select: none;
+}
+
+.register-form-agreement-link {
+    color: var(--blue-color);
+}
+
+.register-form-button-icon {
+    fill: var(--white-color);
+    margin-left: 10px;
+}

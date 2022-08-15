@@ -1,0 +1,76 @@
+/*Navigation*/
+
+.nav {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+
+
+/*site-nav*/
+
+.site-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    transition: color var(--transition);
+}
+
+.nav-link,
+.auth-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.current {
+    color: var(--blue-color);
+}
+
+/*auth-nav*/
+
+.auth-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-left: auto;
+    transition: color var(--transition);
+}
+
+.mail-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+    color: var(--blue-color);
+    --color3: var(--blue-color);
+}
+
+
+
+.nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link:active::after,
+.current::after,
+.auth-link:hover::after,
+.auth-link:focus::after,
+.auth-link:active::after {
+
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    bottom: -1px;
+    background-color: var(--blue-color);
+    border-radius: 2px;
+}

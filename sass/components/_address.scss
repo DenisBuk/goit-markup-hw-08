@@ -1,0 +1,37 @@
+/*address*/
+
+.address {
+    color: var(--footer-primary-color);
+    font-style: inherit;
+}
+
+.logo-white {
+    color: var(--white-color);
+    transition: color var(--transition);
+
+    &:hover,
+    &:focus {
+    color: var(--blue-color);
+    }
+}
+
+.address-link {
+    color: var(--white-color);
+    transition: color var(--transition);
+
+
+    &:hover,
+    &:focus {
+    color: var(--blue-color);
+    }
+}
+
+.address-mail {
+    transition: color var(--transition);
+
+
+    &:hover,
+    &:focus {
+    color: var(--blue-color);
+}
+}
