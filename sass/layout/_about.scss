@@ -2,12 +2,10 @@
     padding-top: 0;
     
 &__list {
-    @media screen and (min-width: 480px) {
-            display: none;
-        }
+     --card-item: 1;
 
     @media screen and (min-width: 768px) {
-            display: none;
+            --card-item: 2;
         }
     
     @media screen and (min-width: 1200px) {

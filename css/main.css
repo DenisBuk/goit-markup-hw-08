@@ -963,14 +963,12 @@ img {
 .about {
   padding-top: 0;
 }
-@media screen and (min-width: 480px) {
-  .about__list {
-    display: none;
-  }
+.about__list {
+  --card-item: 1;
 }
 @media screen and (min-width: 768px) {
   .about__list {
-    display: none;
+    --card-item: 2;
   }
 }
 @media screen and (min-width: 1200px) {
