@@ -1,8 +1,18 @@
 .about {
     padding-top: 0;
+    
 &__list {
-     --card-item: 3;
+     --card-item: 1;
+
+    @media screen and (min-width: 768px) {
+            --card-item: 2;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            --card-item: 3;
+        }
     }
+
 .card-item {
     position: relative;
     }

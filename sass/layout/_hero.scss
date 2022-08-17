@@ -5,8 +5,6 @@
     margin-left: auto;
     margin-right: auto;
 
-    background-image: var(--gradient),
-        url(../images/images-index/fon.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -15,8 +13,44 @@
     padding-bottom: 200px;
 
     text-align: center;
-}
+    /** Mobile screen **/
+    background-image: var(--gradient), url('../images/header/header-img-1@1x_sm.jpg');
+    background-image: var(--gradient), -webkit-image-set(url('../images/header/header-img-1@1x_sm.webp') 1x);
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image:var(--gradient), url('../images/header/header-img-1@2x_sm.jpg');
+    background-image:var(--gradient), -webkit-image-set(url('../images/header/header-img-1@2x_sm.webp') 2x);
+    }
+    
+    // tablet screen
+    @media screen and (min-width: 768px) {
+    background-image: var(--gradient), url('../images/header/header-img-2@1x_md.jpg');
+    background-image: var(--gradient), -webkit-image-set(url('../images/header/header-img-2@1x_md.webp') 1x);
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image:var(--gradient), url('../images/header/header-img-2@2x_md.jpg');
+    background-image:var(--gradient),-webkit-image-set(url('../images/header/header-img-2@2x_md.webp') 2x);
+    }
+    }
+    
+    // desktop screen
+    @media screen and (min-width: 1200px) {
+    background-image:var(--gradient), url('../images/header/header-img-3@1x_lg.jpg');
+    background-image:var(--gradient), -webkit-image-set(url('../images/header/header-img-3@1x_lg.jpg') 1x);
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image:var(--gradient), url('../images/header/header-img-3@2x_lg.jpg');
+    background-image:var(--gradient), -webkit-image-set(url('../images/header/header-img-3@2x_lg.jpg') 2x);
+    }
+    }
 
+}
 .hero-title {
     margin-left: auto;
     margin-right: auto;
