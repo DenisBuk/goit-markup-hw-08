@@ -11,8 +11,15 @@
 }
 
 .header .logo {
-    margin-right: 93px;
     transition: color var(--transition);
+
+    @include mq(tab){
+        margin-right: 88px;
+    }
+
+    @include mq(desk){
+        margin-right: 93px;
+    }
 }
 
 .logo:hover,

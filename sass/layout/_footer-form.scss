@@ -3,19 +3,30 @@
     =============== **/
 
 .footer-form {
+    width: 100%;
+
+    @include mq(desk){
     margin-left: auto;
+}
 }
 
 .form {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include mq(tab){
+        align-items: center;
+    }
+
 }
 
 .footer-form-input {
-    width: 358px;
+    width: 100%;
+    max-width: 450px;
     height: 50px;
     padding: 15px;
-    margin-right: 12px;
-    margin-left: auto;
+    
 
     font-weight: 400;
     font-size: 16px;
@@ -27,4 +38,8 @@
     background: transparent;
     border-radius: 4px;
     cursor: pointer;
+
+    @include mq(desk){
+        width: 358px;
+    }
 }
