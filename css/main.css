@@ -1127,9 +1127,20 @@ img {
 }
 
 /* portfolio */
-.portfolio-set {
-  --card-gap: 30px;
-  --card-item: 3;
+@media screen and (min-width: 480px) {
+  .portfolio-set {
+    --card-item:1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-set {
+    --card-item: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-set {
+    --card-item: 3;
+  }
 }
 
 .wraper-portfolio {

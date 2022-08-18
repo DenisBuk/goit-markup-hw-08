@@ -7,6 +7,10 @@
 }
 
 .footer {
+    @include mq(mob){
+        
+    }
+
     padding-top: 60px;
     padding-bottom: 60px;
 
