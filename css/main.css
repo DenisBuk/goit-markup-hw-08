@@ -227,6 +227,11 @@ img {
   -webkit-transition: color var(--transition);
   transition: color var(--transition);
 }
+@media (max-width: 767.98px) {
+  .site-nav {
+    display: none;
+  }
+}
 
 .nav-link,
 .auth-link {
@@ -265,6 +270,11 @@ img {
   margin-left: auto;
   -webkit-transition: color var(--transition);
   transition: color var(--transition);
+}
+@media (max-width: 767.98px) {
+  .auth-nav {
+    display: none;
+  }
 }
 
 .mail-icon {
@@ -874,6 +884,12 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
 
 .features__list {
   --card-item: 4;
@@ -910,6 +926,11 @@ img {
 
 .about {
   padding-top: 0;
+}
+@media (max-width: 1199.98px) {
+  .about {
+    display: none;
+  }
 }
 .about__list {
   --card-gap:30px;
@@ -969,8 +990,20 @@ img {
 }
 
 /*section-clients*/
-.clients-container {
-  --card-item: 6;
+@media screen and (min-width: 480px) {
+  .clients-container {
+    --card-item: 2;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-container {
+    --card-item: 3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-container {
+    --card-item: 6;
+  }
 }
 
 .clients-link {

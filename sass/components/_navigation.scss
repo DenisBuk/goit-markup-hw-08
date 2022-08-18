@@ -16,6 +16,10 @@
     align-items: center;
     gap: 50px;
     transition: color var(--transition);
+
+    @include mq(mob-only){
+        display:none;
+    }
 }
 
 .nav-link,
@@ -43,6 +47,10 @@
     gap: 50px;
     margin-left: auto;
     transition: color var(--transition);
+
+    @include mq(mob-only) {
+            display: none;
+        }
 }
 
 .mail-icon {
