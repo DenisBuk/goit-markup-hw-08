@@ -2,7 +2,7 @@
      /** Card - set**/
      
     --card-gap: 30px;
-    --card-item: 4;
+    --card-item: 1;
 
     /** Color **/
 
@@ -30,4 +30,9 @@
     
     --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    /** Mobile First **/
+
+    $mob: 480px;
+    $tab: 768px;
+    $desk: 1200px;
 }
