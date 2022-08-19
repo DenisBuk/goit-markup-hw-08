@@ -24,6 +24,10 @@
     }
 }
 
+.menu-close-icon:hover, .menu-close-icon:hover{
+    fill: var(--blue-color);
+}
+
 .menu-overlay {
     padding: 48px 40px;
     display: flex;
@@ -105,21 +109,17 @@
     color:var(--grey-color);
     transition: color var(--transition);
 
-    &:hover, &:focus, .current{
+    &:hover, &:focus{
     color: var(--blue-color);
     }
 }
 
 .phone{
+    
     @include mq(mob-only){
     font-size: 34px;
 }
 }
-
-.phone:active{
-    color: var(--blue-color);
-}
-
 
 .mobile-nav-item {
     &:not(:last-child) {
@@ -136,8 +136,6 @@
     font-size: 18px;
     line-height: calc(22/18);
     letter-spacing: 0.02em;
-
-    color: var(--blue-color);
 }
 
 .mobile-socilas-item:not(:last-child) .mobile-socilas-link {
@@ -145,4 +143,9 @@
 
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+    &:hover, &:focus,{
+        color: var(--blue-color);
+    }
+
 }

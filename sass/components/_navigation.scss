@@ -42,7 +42,6 @@
         font-size: 12px;
         line-height: calc(14/12);
     }
-
 }
 
 
@@ -66,6 +65,8 @@
     @include mq(mob-only) {
             display: none;
         }
+    
+
 }
 
 .mail-icon {
