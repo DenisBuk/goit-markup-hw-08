@@ -35,6 +35,11 @@
     gap: 8px;
 
     margin-bottom: 56px;
+
+    @include mq(mob-only){
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
 
 .filter-button {
