@@ -51,11 +51,7 @@
     border-radius: 4px;
     cursor: pointer;
 
-    @include mq(mob-only){
-        width: 450px;
-    }
-
-    @include mq(desk){
+    @include mq(mob){
         width: 358px;
     }
 }
