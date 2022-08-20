@@ -818,6 +818,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  overflow: auto;
   z-index: 100;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
