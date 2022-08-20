@@ -1,8 +1,14 @@
 /*address*/
 
-.address {
+.address-container {
     color: var(--footer-primary-color);
     font-style: inherit;
+
+    @include mq(desk){
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 .logo-white {

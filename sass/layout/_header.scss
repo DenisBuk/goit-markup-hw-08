@@ -4,6 +4,7 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    border-bottom: 26px;
     
     @include mq(mob-only){
         padding-top: 10px;

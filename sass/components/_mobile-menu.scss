@@ -101,6 +101,10 @@
     }
 }
 
+.active:active {
+    color: var(--blue-color);
+}
+
 .mobile-contacts-link {
     font-weight: 500;
     font-size: 24px;
@@ -110,21 +114,21 @@
     transition: color var(--transition);
 
     &:hover, &:focus{
-    color: var(--blue-color);
+    color: var(--primary-color);
     }
 }
 
 .phone{
-    
+    color: var(--blue-color);
+
     @include mq(mob-only){
     font-size: 34px;
 }
 }
 
 .mobile-nav-item {
-    &:not(:last-child) {
         margin-bottom: 24px;
-    }
+    
 }
 
 .mobile-socilas {
@@ -138,15 +142,15 @@
     letter-spacing: 0.02em;
 }
 
-.mobile-socilas-item:not(:last-child) .mobile-socilas-link {
+.mobile-socilas-item .mobile-socilas-link {
     display: flex;
-
+    color: var(--blue-color);
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
 
     &:hover,
         &:focus {
-            color: var(--blue-color);
+            transform: scale(1.5);
         }
 
 }

@@ -21,4 +21,13 @@ body {
     font-size: 14px;
     line-height: calc(16 / 14);
     text-transform: uppercase;
+
+    @include mq(mob-only){
+        text-align: center;
+    }
+
+    @include mq(desk){
+        text-align: start;
+    }
+
 }
