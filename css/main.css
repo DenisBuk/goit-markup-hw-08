@@ -1369,6 +1369,11 @@ img {
     width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-form-input {
+    width: 358px;
+  }
+}
 
 /* portfolio */
 @media screen and (min-width: 480px) {
